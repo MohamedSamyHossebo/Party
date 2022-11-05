@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.party {
+    background-image: url(../pics/aleksandr-popov-hTv8aaPziOQ-unsplash.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.party h1,
+h2 {
+    font-size: 80px;
+    font-family: 'Comforter Brush', cursive !important;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.partyOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(138, 170, 218, 0.4);
+}
+
+.options {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: -190.75px;
+    z-index: 99999;
+    align-items: flex-start;
+
+}
+
+.options i {
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.options li {
+    height: 100%;
+    padding: 15px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+
+}
+
+.optionSide ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+}
+
+.optionSide a {
+    text-decoration: none !important;
+    font-size: 25px;
+    color: #fff !important;
+    font-family: fantasy;
+}
+
+.optionSide a:hover {
+    background-color: rgba(138, 170, 218, 0.6);
+    transition: all .5s;
+    border-radius: 5px;
+}
+
+.optionSide {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #262140;
+    background-size: cover;
+}
+
+
+#singer {
+    height: 90vh;
+    background-image: url(../pics/pexels-wendy-wei-1537636.jpg);
+    background-size: cover;
+
+}
+
+.singerOverlay {
+    height: 90vh;
+    background-color: rgba(138, 170, 218, 0.3);
+}
+
+.accordion {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: transparent;
+    border-radius: 10px;
+
+}
+
+.singerContent1,
+.singerContent2,
+.singerContent3,
+.singerContent4 {
+    display: none;
+    background-color: rgba(138, 170, 218, 0.1);
+}
+
+#singer h3 {
+    font-family: cursive !important;
+}
+
+.durationTime {
+    background-image: url(../pics/pexels-wendy-wei-1387174.jpg);
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.durationOverlay {
+    background-color: rgba(138, 170, 218, 0.4);
+    width: 100%;
+    height: 100vh;
+}
+
+/*  date*/
+.date {
+    position: relative;
+    display: flex;
+    height: 60vh;
+    width: 100%;
+}
+
+.D,
+.H,
+.M,
+.S {
+    margin-top: 25%;
+    width: 150px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.8);
+    background-color: transparent;
+    border-radius: 5px;
+
+
+}
+
+.container span {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.container p {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    padding: 10px;
+}
+
+.date i {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(50px);
+    background-color: transparent;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+}
+
+.date p {
+    font-size: x-large;
+    font-family: fantasy;
+    font-weight: 50;
+    cursor: pointer;
+}
+
+.date p:hover {
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.8);
+    transition-delay: 0.1s;
+    color: aliceblue;
+}
+
+.date span {
+    font-size: xx-large;
+    font-family: monospace !important;
+    background-color: #38465C;
+    color: aliceblue;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.date i:hover {
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.8);
+    transition-delay: 0.1s;
+}
+
+#contact {
+    height: 60vh;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.textBox input,
+textarea {
+    display: flex;
+    margin: 50px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+    border: none;
+}
+
+.textBox textarea {
+
+    height: 160px;
+
+}
+
+.textBox textarea:focus {
+    outline: none !important;
+    border-color: crimson;
+    box-shadow: 0 0 2px crimson;
+}
+
+.textBox input {
+    border: none;
+    width: 250px;
+}
+
+.textBox button {
+    background-color: crimson;
+    color: white;
+}
+
+.textBox button:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.infoBox h1 {
+    font-family: 'Comforter Brush', cursive !important;
+    display: flex;
+    justify-content: center;
+}
+
+.infoBox span {
+    color: crimson;
+}
+
+.infoBox i {
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.characters span {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 5px;
+    color: crimson;
+}
+
+.characters p {
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    border: none;
+}
+
+footer {
+    background-color: black;
+    height: 30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
