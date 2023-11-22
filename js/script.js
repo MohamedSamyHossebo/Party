@@ -46,7 +46,7 @@ $('a').click(function (e) {
 
 // Timer
 // 1672523999000
-let CountDownDate = new Date("Dec 31, 2022 23:59:59").getTime()
+let CountDownDate = new Date("Dec 31, 2023 23:59:59").getTime()
 // console.log(CountDownDate);
 let counter = setInterval(() => {
     // get Date Now
